@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 13 10122087</title>
+    <link rel="stylesheet" href="bg.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="icon" href="./foto/R.png">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<body>
+    <section id="home">
+        <div class="header">
+            <div>
+                <nav id="navbar">
+                    <img src="./foto/R.png" class="logo">
+                        <ul class="menu" id="menu">
+                            <li class="navwr">
+                                <a href="#home" class="navlink">Home</a>
+                            </li>
+                            <li class="navwr">
+                                <a href="#killers" class="navlink">Killers</a>
+                            </li>
+                            <li class="navwr">
+                                <a href="#survivor" class="navlink">Survivors</a>
+                            </li>
+                            <li class="navwr">
+                                <a href="#Mt" class="navlink">Maps</a>
+                            </li>
+                            <li class="navwr">
+                                <a href="#Void" class="navlink">Sounds</a>
+                            </li>
+                            <li class="navwr">
+                                <a href="#About Me" class="navlink">About Me</a>
+                            </li>
+                        </ul>
+                </nav>
+            </div>    
+        </div>   
+    </section>
+    <section id="killers">
+        <div class="header blue">
+            <div class="dark">
+                <h1>
+                    <table><center>
+                        Killers<br>
+                        <tr><td><img src="./foto/Killer/1.webp">Evan Macmillan - The Trapper</td>
+                            <td><img src="./foto/Killer/2.webp">Philip Ojomo - The Wraith</td>
+                            <td><img src="./foto/killer/3.webp">Max Thompson Jr. - Hillbilly</td>
+                        </tr>
+                    </table></center>
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section id="survivor">
+        <div class="header black">
+            <div class="dark">
+                <h1>
+                    <table><center>
+                        Survivors<br>
+                        <tr><td><img src="./foto/Sur/1.webp">Dwight Fairfield</td>
+                            <td><img src="./foto/Sur/2.webp">Meg Thomas</td>
+                            <td><img src="./foto/Sur/3.webp">Claudette Morel</td>
+                    </table></center>
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section id="Mt">
+        <div class="header gr">
+            <div class="dark">
+                <h1>
+                    <table><center>
+                        Maps<br>
+                        <tr><td>Coal Tower         <img src="./foto/Maps/1.webp"><td><img src="./foto/Maps/11.webp"></td></td>
+                            <td>Groaning Storehouse<img src="./foto/Maps/2.webp"><td><img src="./foto/Maps/22.webp"></td></td>
+                            <td>Ironworks of Misery<img src="./foto/Maps/3.webp"><td><img src="./foto/Maps/33.webp"></td></td>
+                    </table></center>
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section id="Void">
+        <div class="header pink">
+            <div class="dark">
+                <h1>
+                    <table><center>
+                        Sounds<br>
+                        <tr><td><audio controls><source src="./foto/Sounds/[v2.2.0] Dead by Daylight Menu Music Theme.mp3" type="audio/mp3"></audio>Dead by Daylight Menu Music Theme</td>
+                            <td><audio controls><source src="./foto/Sounds/Dead by Daylight Clown Theme.mp3" type="audio/mp3"></audio>Dead by Daylight Clown Theme</td>
+                            <td><audio controls><source src="./foto/Sounds/Dead by Daylight UST - Patch 2.4.0 Menu Music (The Legion Theme).mp3" type="audio/mp3"></audio>Dead by Daylight Legion Theme</td>
+                    </table></center>
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section id="About Me">
+        <div class="header red">
+            <div class="nomor">
+                <h1>Rama Hadi Nugraha<br>IF-3<br>10122087<br>rama.10122087@mahasiswa.unikom.ac.id</h1>
+            </div>
+            <div class="icon">
+                <a class="tombol" target="_blank" href="https://www.facebook.com/profile.php?id=100009074691294"><i class="fab fa-facebook-f" ></i></a>
+                <a class="tombol" target="_blank" href="https://www.instagram.com/__rmhd__/"><i class="fab fa-instagram"></i></a>
+                <a class="tombol" target="_blank" href="https://github.com/Ram4UnMi"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+<script>
+    var navbar = document.getElementById ("navbar")
+    var menu = document.getElementById ("menu")
+        
+    window.onscroll = function(){
+        if(window.pageYOffset >= menu.offsetTop){
+            navbar.classList.add("sticky");
+        }
+        else{
+            navbar.classList.remove("sticky");
+        }
+            
+    }
+    </script>
+</body>
+</html>

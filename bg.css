@@ -1,0 +1,206 @@
+@import url('https://font.googleaapis.com/css2/family=Patrick=Hand&display=swap');
+hr {
+    color: black;
+    size: 200px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serif';
+    font-family: 'Patrick Hand', cursive;
+    scroll-behavior: smooth;
+}
+section{
+    height: 100vh;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./foto/bg1.gif");
+    background-position: center;
+    background-size: cover;
+    padding: 1px
+}
+nav{
+    width: 100%;
+    padding: 1% 0;
+    text-align: center;
+    top: 30px;
+    position: relative;
+    top: 10px;
+
+}
+.logo{
+    width: 65px;
+    margin: 15px 0;
+    cursor: pointer;
+    padding: 10;
+}
+nav ul{
+    position: relative;
+    background: black;
+    width: 100%;
+    margin-top: 1px;
+    height: 25%;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    list-style-type: none;
+}
+.navlink {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+}
+nav ul a{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    list-style: none;
+    margin: 20px 30px;
+    color: #fff;
+    cursor: pointer;
+    width: 100px;
+    height: 100%px;
+}
+nav ul a:hover{
+    background-color: white;
+    border-radius: 10px;
+    transition: all ease-in-out .8s;
+    color: #cc1919;
+}
+nav ul li:hover > a {
+    color: #cc1919;
+}
+.judul{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    font-size: 80px;
+    position: relative;
+    transition: padding 1s;
+}
+nav.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 8%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: padding 1s;
+
+}
+nav.sticky ul{
+    width: auto;
+}
+.icon{
+    position: relative;
+    top: 75%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+.tombol{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: black;
+    margin: 10px;
+    border-radius: 30%;
+    box-sizing: 0 5px 15px -5px #00000070;
+    overflow: hidden;
+    position: relative;
+    color: #2980b9;
+
+}
+.dark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.tombol i{
+    transition: 0.2 linear;
+    font-size: 26px;
+    line-height: 90px;
+
+}
+.tombol:hover i{
+    transform: scale(1.3);
+    color: white;
+
+}
+.tombol::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: -110px;
+    top: 90%;
+    transform: rotate(45deg);
+    background: #3498bd;
+}
+.tombol:hover::before{
+    left: -10px;
+    top: -10%;
+    animation: aaa 0.7s 1;
+
+}
+.nomor{
+    color: white;
+    position: relative;
+    position: relative;
+    top: 70%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+.blue{
+    background-image: url(./foto/bgsur1.jpg);
+    background-color: black;
+}
+.red{
+    background-color: black;
+    background-image: none;
+
+}
+.gr{
+    background-image: url(./foto/bgsur3.jpg);
+    background-color: black;
+}
+.pink{
+    background-image: url(./foto/bgkil.jpg);
+    background-color: black;
+}
+.black{
+    background-image: url(./foto/bgsur2.webp);
+    background-color: black;
+}
+@keyframes aaa{
+    0%{
+        left: -110%;
+        top: -90%;
+    }
+    50%{
+        left: 10%;
+        top: -30%;
+    }
+    100%{
+        left: -10%;
+        top: -10%;
+    }
+}
